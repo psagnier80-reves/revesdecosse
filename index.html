@@ -34,9 +34,11 @@ h2{font:400 clamp(2rem,4vw,3rem) Georgia,serif;margin:0}.mini{width:55px;height:
   background-position:center center;
 }
 .card.ness{
-  background-image:url("loch-ness-latest-card.png");
-  background-size:100% 100%;
-  background-position:center;
+  background-image:
+    linear-gradient(to top,rgba(4,12,20,.94),rgba(4,12,20,.38) 68%,rgba(4,12,20,.18)),
+    url("loch-ness-latest-card.png");
+  background-size:cover,138% auto;
+  background-position:center,right center;
   background-repeat:no-repeat;
 }
 .card.latest-card{
@@ -82,7 +84,13 @@ footer{text-align:center;padding:32px 20px 42px;border-top:1px solid #ffffff18;c
     </div>
   </article>
 
-  <article class="card ness latest-card" aria-label="Épisode 2 — Les mystères du Loch Ness">
+  <article class="card ness latest-card">
+    <div class="card-content">
+      <div class="label">ÉPISODE 2</div>
+      <h3>Les mystères<br>du Loch Ness</h3>
+      <p>Une traversée paisible le long du Loch, entre histoire, mystères et récits écossais.</p>
+      <a class="more" href="#">Découvrir l’épisode →</a>
+    </div>
   </article>
 </section>
 
