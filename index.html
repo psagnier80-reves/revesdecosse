@@ -27,7 +27,9 @@ h1{font:400 clamp(3.3rem,8vw,7rem)/.95 Georgia,serif;letter-spacing:.055em;margi
 .intro{max-width:850px;margin:auto;text-align:center;padding:75px 25px 55px}
 h2{font:400 clamp(2rem,4vw,3rem) Georgia,serif;margin:0}.mini{width:55px;height:1px;background:var(--gold);margin:20px auto}
 .intro p{line-height:1.8;color:var(--muted);font-size:1.04rem}
-.episodes{width:min(1120px,calc(100% - 38px));margin:auto;padding:10px 0 90px;display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.latest-heading{text-align:center;padding:8px 20px 28px}
+.latest-heading h2{font-size:clamp(1.9rem,3.5vw,2.7rem)}
+.episodes{width:min(1120px,calc(100% - 38px));margin:auto;padding:10px 0 35px;display:grid;grid-template-columns:1fr 1fr;gap:22px}
 .card{min-height:460px;border:1px solid #9d7139;border-radius:18px;overflow:hidden;position:relative;background:#102131;display:flex;align-items:flex-end;background-size:cover;background-position:center}
 .card.skye{
   background-image:linear-gradient(to top,rgba(4,12,20,.92),rgba(4,12,20,.04) 70%),url("skye-old-man-of-storr.png");
@@ -50,6 +52,8 @@ h2{font:400 clamp(2rem,4vw,3rem) Georgia,serif;margin:0}.mini{width:55px;height:
 h3{font:400 2rem/1.12 Georgia,serif;margin:0 0 14px}
 .card p{line-height:1.65;color:#f0ebe3;margin:0 0 18px;max-width:460px}
 .more{color:#f0b55a;text-decoration:none;border-bottom:1px solid #a77a3d;padding-bottom:3px}
+.archive-link{text-align:center;padding:0 20px 80px}
+.archive-btn{display:inline-block;border:1px solid var(--gold);border-radius:30px;padding:13px 28px;color:var(--cream);text-decoration:none;font-weight:bold;background:#07111d55}
 footer{text-align:center;padding:32px 20px 42px;border-top:1px solid #ffffff18;color:#bcb4a9}
 @media(max-width:760px){.episodes{grid-template-columns:1fr}.hero{min-height:92vh}.kicker{letter-spacing:.2em}.card{min-height:420px}}
 </style>
@@ -67,11 +71,15 @@ footer{text-align:center;padding:32px 20px 42px;border-top:1px solid #ffffff18;c
     </div>
   </div>
 </header>
-
 <section class="intro">
   <h2>Bienvenue dans Rêves d’Écosse</h2>
   <div class="mini"></div>
   <p>Fermez les yeux et laissez-vous emporter au cœur de l’Écosse. À travers ses paysages, son histoire et ses légendes, chaque épisode vous invite à ralentir, à voyager… et doucement à vous endormir.</p>
+</section>
+
+<section class="latest-heading">
+  <h2>Les derniers épisodes</h2>
+  <div class="mini"></div>
 </section>
 
 <section class="episodes">
@@ -83,7 +91,6 @@ footer{text-align:center;padding:32px 20px 42px;border-top:1px solid #ffffff18;c
       <a class="more" href="https://open.spotify.com/episode/7CLKRSX7mtSqEz3bxPrYTs?si=SPmhLCg-T7SM2EX0YdozUg" target="_blank" rel="noopener">Découvrir l’épisode →</a>
     </div>
   </article>
-
   <article class="card ness latest-card">
     <div class="card-content">
       <div class="label">ÉPISODE 2</div>
@@ -93,6 +100,10 @@ footer{text-align:center;padding:32px 20px 42px;border-top:1px solid #ffffff18;c
     </div>
   </article>
 </section>
+
+<div class="archive-link">
+  <a class="archive-btn" href="episodes.html">Voir tous les épisodes</a>
+</div>
 
 <footer>Rêves d’Écosse est un podcast pensé pour vous accompagner vers des nuits calmes et de beaux rêves d’Écosse.</footer>
 </body>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tous les épisodes — Rêves d’Écosse</title>
+<meta name="description" content="Retrouvez tous les épisodes de Rêves d’Écosse.">
+<style>
+:root{--navy:#071725;--cream:#f5efe4;--gold:#d49a3d;--muted:#ddd5c9}
+*{box-sizing:border-box}
+body{margin:0;background:var(--navy);color:var(--cream);font-family:Arial,Helvetica,sans-serif}
+.top{padding:28px 20px;text-align:center;border-bottom:1px solid #ffffff18}
+.home{color:var(--cream);text-decoration:none;font:400 1.35rem Georgia,serif;letter-spacing:.08em}
+.heading{text-align:center;padding:68px 20px 45px}
+h1{font:400 clamp(2.6rem,6vw,4.5rem) Georgia,serif;margin:0}
+.mini{width:55px;height:1px;background:var(--gold);margin:20px auto}
+.heading p{color:var(--muted);line-height:1.7;margin:0}
+.episodes{width:min(1120px,calc(100% - 38px));margin:auto;padding:0 0 80px;display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.card{min-height:460px;border:1px solid #9d7139;border-radius:18px;overflow:hidden;position:relative;background:#102131;display:flex;align-items:flex-end;background-size:cover;background-position:center}
+.card.skye{background-image:linear-gradient(to top,rgba(4,12,20,.92),rgba(4,12,20,.04) 70%),url("skye-old-man-of-storr.png");background-position:center center}
+.card.ness{background-image:linear-gradient(to top,rgba(4,12,20,.94),rgba(4,12,20,.38) 68%,rgba(4,12,20,.18)),url("loch-ness-clean-latest.png");background-size:cover,cover;background-position:center,center;background-repeat:no-repeat}
+.card-content{padding:30px;width:100%;text-shadow:0 2px 8px #000}
+.label{color:var(--gold);letter-spacing:.16em;font-size:.75rem;margin-bottom:13px}
+h2{font:400 2rem/1.12 Georgia,serif;margin:0 0 14px}
+.card p{line-height:1.65;color:#f0ebe3;margin:0 0 18px;max-width:460px}
+.more{color:#f0b55a;text-decoration:none;border-bottom:1px solid #a77a3d;padding-bottom:3px}
+footer{text-align:center;padding:32px 20px 42px;border-top:1px solid #ffffff18;color:#bcb4a9}
+@media(max-width:760px){.episodes{grid-template-columns:1fr}.card{min-height:420px}}
+</style>
+</head>
+<body>
+<div class="top"><a class="home" href="index.html">RÊVES D’ÉCOSSE</a></div>
+
+<section class="heading">
+  <h1>Tous les épisodes</h1>
+  <div class="mini"></div>
+  <p>Retrouvez ici tous les voyages de Rêves d’Écosse.</p>
+</section>
+
+<section class="episodes">
+  <article class="card ness">
+    <div class="card-content">
+      <div class="label">ÉPISODE 2</div>
+      <h2>Les mystères<br>du Loch Ness</h2>
+      <p>Suivez les rives du loch à la recherche de son histoire et ses énigmes.</p>
+      <a class="more" href="#">Découvrir l’épisode →</a>
+    </div>
+  </article>
+
+  <article class="card skye">
+    <div class="card-content">
+      <div class="label">ÉPISODE 1</div>
+      <h2>Skye, entre<br>monts et légendes</h2>
+      <p>Des Cuillins aux Fairy Pools, une immersion dans les paysages sauvages de Skye.</p>
+      <a class="more" href="https://open.spotify.com/episode/7CLKRSX7mtSqEz3bxPrYTs?si=SPmhLCg-T7SM2EX0YdozUg" target="_blank" rel="noopener">Découvrir l’épisode →</a>
+    </div>
+  </article>
+</section>
+
+<footer>Rêves d’Écosse est un podcast pensé pour vous accompagner vers des nuits calmes et de beaux rêves d’Écosse.</footer>
+</body>
+</html>
