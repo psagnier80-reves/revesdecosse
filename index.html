@@ -5,39 +5,135 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rêves d’Écosse</title>
 <meta name="description" content="Voyages au cœur des Highlands pour s’évader et s’endormir.">
+
 <style>
 :root{--navy:#071725;--cream:#f5efe4;--gold:#d49a3d;--muted:#ddd5c9}
+
 *{box-sizing:border-box}
+
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--navy);color:var(--cream);font-family:Arial,Helvetica,sans-serif}
+
+body{
+  margin:0;
+  background:var(--navy);
+  color:var(--cream);
+  font-family:Arial,Helvetica,sans-serif
+}
+
 .hero{
-  min-height:100vh;display:grid;place-items:center;text-align:center;padding:45px 22px;position:relative;
+  min-height:100vh;
+  display:grid;
+  place-items:center;
+  text-align:center;
+  padding:45px 22px;
+  position:relative;
   background:
     linear-gradient(to bottom,rgba(4,9,16,.18),rgba(4,9,16,.25) 52%,rgba(4,9,16,.36)),
     url("buachaille-etive-mor.png") center/cover no-repeat;
 }
-.hero-inner{position:relative;z-index:1;width:min(1050px,100%)}
-.kicker{letter-spacing:.34em;font-size:.78rem;margin-bottom:22px}
-h1{font:400 clamp(3.3rem,8vw,7rem)/.95 Georgia,serif;letter-spacing:.055em;margin:0;text-shadow:0 4px 25px #0008}
-.rule{display:flex;align-items:center;gap:14px;width:min(420px,70%);margin:30px auto 24px;color:var(--gold)}
-.rule:before,.rule:after{content:"";height:1px;background:currentColor;flex:1}
-.tagline{font:italic clamp(1.15rem,2.2vw,1.55rem)/1.5 Georgia,serif;text-shadow:0 2px 15px #000;margin-bottom:34px}
-.buttons{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-.btn{border:1px solid #fff;border-radius:30px;padding:14px 25px;min-width:245px;color:#fff;text-decoration:none;font-weight:bold;background:#07111d88}
-.intro{max-width:850px;margin:auto;text-align:center;padding:75px 25px 55px}
-h2{font:400 clamp(2rem,4vw,3rem) Georgia,serif;margin:0}
-.mini{width:55px;height:1px;background:var(--gold);margin:20px auto}
-.intro p{line-height:1.8;color:var(--muted);font-size:1.04rem}
-.latest-heading{text-align:center;padding:8px 20px 28px}
-.latest-heading h2{font-size:clamp(1.9rem,3.5vw,2.7rem)}
+
+.hero-inner{
+  position:relative;
+  z-index:1;
+  width:min(1050px,100%)
+}
+
+.kicker{
+  letter-spacing:.34em;
+  font-size:.78rem;
+  margin-bottom:22px
+}
+
+h1{
+  font:400 clamp(3.3rem,8vw,7rem)/.95 Georgia,serif;
+  letter-spacing:.055em;
+  margin:0;
+  text-shadow:0 4px 25px #0008
+}
+
+.rule{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  width:min(420px,70%);
+  margin:30px auto 24px;
+  color:var(--gold)
+}
+
+.rule:before,.rule:after{
+  content:"";
+  height:1px;
+  background:currentColor;
+  flex:1
+}
+
+.tagline{
+  font:italic clamp(1.15rem,2.2vw,1.55rem)/1.5 Georgia,serif;
+  text-shadow:0 2px 15px #000;
+  margin-bottom:34px
+}
+
+.buttons{
+  display:flex;
+  gap:14px;
+  justify-content:center;
+  flex-wrap:wrap
+}
+
+.btn{
+  border:1px solid #fff;
+  border-radius:30px;
+  padding:14px 25px;
+  min-width:245px;
+  color:#fff;
+  text-decoration:none;
+  font-weight:bold;
+  background:#07111d88
+}
+
+.intro{
+  max-width:850px;
+  margin:auto;
+  text-align:center;
+  padding:75px 25px 55px
+}
+
+h2{
+  font:400 clamp(2rem,4vw,3rem) Georgia,serif;
+  margin:0
+}
+
+.mini{
+  width:55px;
+  height:1px;
+  background:var(--gold);
+  margin:20px auto
+}
+
+.intro p{
+  line-height:1.8;
+  color:var(--muted);
+  font-size:1.04rem
+}
+
+.latest-heading{
+  text-align:center;
+  padding:8px 20px 28px
+}
+
+.latest-heading h2{
+  font-size:clamp(1.9rem,3.5vw,2.7rem)
+}
+
 .episodes{
   width:min(1120px,calc(100% - 38px));
   margin:auto;
   padding:10px 0 35px;
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:22px;
+  gap:22px
 }
+
 .card{
   min-height:460px;
   border:1px solid #9d7139;
@@ -48,62 +144,77 @@ h2{font:400 clamp(2rem,4vw,3rem) Georgia,serif;margin:0}
   display:flex;
   align-items:flex-end;
   background-size:cover;
-  background-position:center;
+  background-position:center
 }
+
 .card.skye{
   background-image:
     linear-gradient(to top,rgba(4,12,20,.92),rgba(4,12,20,.04) 70%),
     url("skye-old-man-of-storr.png");
-  background-position:center center;
+  background-position:center center
 }
+
 .card.ness{
   background-image:
     linear-gradient(to top,rgba(4,12,20,.94),rgba(4,12,20,.38) 68%,rgba(4,12,20,.18)),
     url("loch-ness-clean-latest.png");
   background-size:cover,cover;
   background-position:center,center;
-  background-repeat:no-repeat;
+  background-repeat:no-repeat
 }
+
+/* EPISODE 3 */
 .card.edi{
   background-image:
     linear-gradient(to top,rgba(4,12,20,.94),rgba(4,12,20,.30) 68%,rgba(4,12,20,.12)),
-    url("edinburgh-macabre.png");
+    url("edinburgh-macabre.png.png");
   background-size:cover,cover;
   background-position:center,center;
-  background-repeat:no-repeat;
+  background-repeat:no-repeat
 }
+
 .card.latest-card{
   border:1px solid #9d7139;
-  background-color:#102131;
+  background-color:#102131
 }
+
 .card-content{
   padding:30px;
   width:100%;
-  text-shadow:0 2px 8px #000;
+  text-shadow:0 2px 8px #000
 }
+
 .label{
   color:var(--gold);
   letter-spacing:.16em;
   font-size:.75rem;
-  margin-bottom:13px;
+  margin-bottom:13px
 }
+
 h3{
   font:400 2rem/1.12 Georgia,serif;
-  margin:0 0 14px;
+  margin:0 0 14px
 }
+
 .card p{
   line-height:1.65;
   color:#f0ebe3;
   margin:0 0 18px;
-  max-width:460px;
+  max-width:460px
 }
+
 .more{
   color:#f0b55a;
   text-decoration:none;
   border-bottom:1px solid #a77a3d;
-  padding-bottom:3px;
+  padding-bottom:3px
 }
-.archive-link{text-align:center;padding:0 20px 80px}
+
+.archive-link{
+  text-align:center;
+  padding:0 20px 80px
+}
+
 .archive-btn{
   display:inline-block;
   border:1px solid var(--gold);
@@ -112,27 +223,37 @@ h3{
   color:var(--cream);
   text-decoration:none;
   font-weight:bold;
-  background:#07111d55;
+  background:#07111d55
 }
+
 footer{
   text-align:center;
   padding:32px 20px 42px;
   border-top:1px solid #ffffff18;
-  color:#bcb4a9;
+  color:#bcb4a9
 }
+
 .footer-links{
   display:flex;
   justify-content:center;
   gap:18px;
   flex-wrap:wrap;
-  margin:18px 0 12px;
+  margin:18px 0 12px
 }
+
 .footer-links a{
   color:#d8a85d;
-  text-decoration:none;
+  text-decoration:none
 }
-.footer-links a:hover{text-decoration:underline}
-.copyright{font-size:.9rem;color:#8f8a82}
+
+.footer-links a:hover{
+  text-decoration:underline
+}
+
+.copyright{
+  font-size:.9rem;
+  color:#8f8a82
+}
 
 @media(max-width:760px){
   .episodes{grid-template-columns:1fr}
@@ -147,106 +268,171 @@ footer{
 
 <header class="hero">
   <div class="hero-inner">
-    <div class="kicker">VOYAGES · HISTOIRES · LÉGENDES</div>
+
+    <div class="kicker">
+      VOYAGES · HISTOIRES · LÉGENDES
+    </div>
+
     <h1>RÊVES D’ÉCOSSE</h1>
+
     <div class="rule">✦</div>
-    <div class="tagline">Voyages au cœur des Highlands pour s’évader et s’endormir.</div>
+
+    <div class="tagline">
+      Voyages au cœur des Highlands pour s’évader et s’endormir.
+    </div>
 
     <div class="buttons">
+
       <a class="btn"
          href="https://open.spotify.com/show/72VrIPuSCmaoITFHz2qOhi?si=4091bc7d67ce4681"
          target="_blank"
          rel="noopener">
-         ÉCOUTER / REGARDER SUR SPOTIFY
+        ÉCOUTER / REGARDER SUR SPOTIFY
       </a>
 
       <a class="btn"
          href="https://www.youtube.com/@R%C3%AAvesdEcosse"
          target="_blank"
          rel="noopener">
-         REGARDER SUR YOUTUBE
+        REGARDER SUR YOUTUBE
       </a>
+
     </div>
+
   </div>
 </header>
 
+
 <section class="intro">
+
   <h2>Bienvenue dans Rêves d’Écosse</h2>
+
   <div class="mini"></div>
+
   <p>
     Fermez les yeux et laissez-vous emporter au cœur de l’Écosse.
-    À travers ses paysages, son histoire et ses légendes, chaque épisode vous invite
-    à ralentir, à voyager… et doucement à vous endormir.
+    À travers ses paysages, son histoire et ses légendes, chaque épisode
+    vous invite à ralentir, à voyager… et doucement à vous endormir.
   </p>
+
 </section>
 
+
 <section class="latest-heading">
+
   <h2>Les derniers épisodes</h2>
+
   <div class="mini"></div>
+
 </section>
+
 
 <section class="episodes">
 
+  <!-- EPISODE 3 -->
+
   <article class="card edi latest-card">
+
     <div class="card-content">
-      <div class="label">ÉPISODE 3</div>
-      <h3>Édimbourg, capitale<br>du macabre</h3>
+
+      <div class="label">
+        ÉPISODE 3
+      </div>
+
+      <h3>
+        Édimbourg, capitale<br>
+        du macabre
+      </h3>
+
       <p>
-        Explorez le côté sombre de la capitale écossaise, entre cimetières,
-        histoires macabres et légendes souterraines.
+        Explorez le côté sombre de la capitale écossaise,
+        entre cimetières, histoires macabres et légendes souterraines.
       </p>
+
       <a class="more"
          href="https://open.spotify.com/episode/4tBwTVaWH2f0rkrUxZJkp5?si=a0f8dd5d34404c40"
          target="_blank"
          rel="noopener">
-         Découvrir l’épisode →
+        Découvrir l’épisode →
       </a>
+
     </div>
+
   </article>
 
+
+  <!-- EPISODE 2 -->
+
   <article class="card ness">
+
     <div class="card-content">
-      <div class="label">ÉPISODE 2</div>
-      <h3>Les mystères<br>du Loch Ness</h3>
+
+      <div class="label">
+        ÉPISODE 2
+      </div>
+
+      <h3>
+        Les mystères<br>
+        du Loch Ness
+      </h3>
+
       <p>
         Suivez les rives du loch à la recherche de son histoire et ses énigmes.
       </p>
+
       <a class="more"
          href="https://open.spotify.com/episode/16BQJyEOqtfNICtYnS41Hq?si=dc66a7ef94374208"
          target="_blank"
          rel="noopener">
-         Découvrir l’épisode →
+        Découvrir l’épisode →
       </a>
+
     </div>
+
   </article>
 
 </section>
 
+
 <div class="archive-link">
-  <a class="archive-btn" href="episodes.html">Voir tous les épisodes</a>
+
+  <a class="archive-btn"
+     href="episodes.html">
+    Voir tous les épisodes
+  </a>
+
 </div>
 
+
 <footer>
+
   <div>
-    Rêves d’Écosse est un podcast pensé pour vous accompagner vers des nuits calmes
-    et de beaux rêves d’Écosse.
+    Rêves d’Écosse est un podcast pensé pour vous accompagner
+    vers des nuits calmes et de beaux rêves d’Écosse.
   </div>
 
   <div class="footer-links">
+
     <a href="https://www.facebook.com/profile.php?id=61593845064733"
        target="_blank"
        rel="noopener">
-       Facebook
+      Facebook
     </a>
 
-    <a href="mailto:revesdecosse@hotmail.com">Contact</a>
+    <a href="mailto:revesdecosse@hotmail.com">
+      Contact
+    </a>
 
-    <a href="mentions-legales.html">Mentions légales</a>
+    <a href="mentions-legales.html">
+      Mentions légales
+    </a>
+
   </div>
 
   <div class="copyright">
     © 2026 Rêves d’Écosse · Tous droits réservés
   </div>
+
 </footer>
 
 </body>
