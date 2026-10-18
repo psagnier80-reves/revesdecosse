@@ -103,9 +103,9 @@ h1{
 }
 
 .btn:hover{
-  background:#d49a3d;
-  color:#071725;
-  border-color:#d49a3d
+  background:var(--gold);
+  color:var(--navy);
+  border-color:var(--gold)
 }
 
 .intro{
@@ -165,6 +165,7 @@ h2{
 }
 
 /* EPISODE 8 — GLASGOW */
+/* Corrected image filename */
 
 .card.glasgow{
   background-image:
@@ -174,7 +175,8 @@ h2{
       rgba(4,12,20,.25) 68%,
       rgba(4,12,20,.10)
     ),
-    url("University of Glasgow in Autumn Light(1).png");
+    url("University of Glasgow in Autumn Light.png");
+
   background-size:cover,cover;
   background-position:center,center;
   background-repeat:no-repeat
@@ -191,28 +193,11 @@ h2{
       rgba(4,12,20,.10)
     ),
     url("ChatGPT Image Sep 27, 2026, 05_32_15 PM.png");
+
   background-size:cover,cover;
   background-position:center,center;
   background-repeat:no-repeat
 }
-
-/* EPISODE 6 — MULL, IONA ET STAFFA */
-
-.card.mull{
-  background-image:
-    linear-gradient(
-      to top,
-      rgba(4,12,20,.94),
-      rgba(4,12,20,.25) 68%,
-      rgba(4,12,20,.10)
-    ),
-    url("ChatGPT Image Sep 25, 2026, 06_33_44 PM.png");
-  background-size:cover,cover;
-  background-position:center,center;
-  background-repeat:no-repeat
-}
-
-/* LATEST EPISODE HIGHLIGHT */
 
 .card.latest-card{
   border:1px solid var(--gold);
@@ -451,44 +436,11 @@ footer{
 
   </article>
 
-  <!-- EPISODE 6 — MULL, IONA ET STAFFA -->
-
-  <article class="card mull">
-
-    <div class="card-content">
-
-      <div class="label">
-        ÉPISODE 6
-      </div>
-
-      <h3>
-        Mull, Iona et Staffa<br>
-        L’âme sauvage
-      </h3>
-
-      <p>
-        Embarquez pour les Hébrides intérieures, entre
-        villages colorés, plages immaculées, anciennes abbayes
-        et colonnes de basalte de la mystérieuse grotte de Fingal.
-      </p>
-
-      <a class="more"
-         href="https://open.spotify.com/episode/2F7wUaY1GP9XWw9BxvrB8s?si=fe7cff99cbb6478f"
-         target="_blank"
-         rel="noopener">
-        Écouter sur Spotify →
-      </a>
-
-    </div>
-
-  </article>
-
 </section>
 
 <div class="archive-link">
 
-  <a class="archive-btn"
-     href="episodes.html">
+  <a class="archive-btn" href="episodes.html">
     Voir tous les épisodes
   </a>
 
