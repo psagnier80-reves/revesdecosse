@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -7,7 +8,12 @@
 <meta name="description" content="Voyages au cœur des Highlands pour s’évader et s’endormir.">
 
 <style>
-:root{--navy:#071725;--cream:#f5efe4;--gold:#d49a3d;--muted:#ddd5c9}
+:root{
+  --navy:#071725;
+  --cream:#f5efe4;
+  --gold:#d49a3d;
+  --muted:#ddd5c9
+}
 
 *{box-sizing:border-box}
 
@@ -28,7 +34,12 @@ body{
   padding:45px 22px;
   position:relative;
   background:
-    linear-gradient(to bottom,rgba(4,9,16,.18),rgba(4,9,16,.25) 52%,rgba(4,9,16,.36)),
+    linear-gradient(
+      to bottom,
+      rgba(4,9,16,.18),
+      rgba(4,9,16,.25) 52%,
+      rgba(4,9,16,.36)
+    ),
     url("buachaille-etive-mor.png") center/cover no-repeat;
 }
 
@@ -91,6 +102,12 @@ h1{
   background:#07111d88
 }
 
+.btn:hover{
+  background:#d49a3d;
+  color:#071725;
+  border-color:#d49a3d
+}
+
 .intro{
   max-width:850px;
   margin:auto;
@@ -147,31 +164,59 @@ h2{
   background-position:center
 }
 
-/* EPISODE 5 — WALTER SCOTT */
+/* EPISODE 8 — GLASGOW */
 
-.card.scott{
+.card.glasgow{
   background-image:
-    linear-gradient(to top,rgba(4,12,20,.94),rgba(4,12,20,.25) 68%,rgba(4,12,20,.10)),
-    url("ChatGPT Image Sep 14, 2026, 06_30_39 PM.png");
+    linear-gradient(
+      to top,
+      rgba(4,12,20,.94),
+      rgba(4,12,20,.25) 68%,
+      rgba(4,12,20,.10)
+    ),
+    url("University of Glasgow in Autumn Light(1).png");
   background-size:cover,cover;
   background-position:center,center;
   background-repeat:no-repeat
 }
 
-/* EPISODE 4 — MORAY FIRTH */
+/* EPISODE 7 — GLENCOE */
 
-.card.moray{
+.card.glencoe{
   background-image:
-    linear-gradient(to top,rgba(4,12,20,.94),rgba(4,12,20,.25) 68%,rgba(4,12,20,.10)),
-    url("ChatGPT Image Sep 5, 2026, 08_01_38 PM.png");
+    linear-gradient(
+      to top,
+      rgba(4,12,20,.94),
+      rgba(4,12,20,.25) 68%,
+      rgba(4,12,20,.10)
+    ),
+    url("ChatGPT Image Sep 27, 2026, 05_32_15 PM.png");
   background-size:cover,cover;
   background-position:center,center;
   background-repeat:no-repeat
 }
+
+/* EPISODE 6 — MULL, IONA ET STAFFA */
+
+.card.mull{
+  background-image:
+    linear-gradient(
+      to top,
+      rgba(4,12,20,.94),
+      rgba(4,12,20,.25) 68%,
+      rgba(4,12,20,.10)
+    ),
+    url("ChatGPT Image Sep 25, 2026, 06_33_44 PM.png");
+  background-size:cover,cover;
+  background-position:center,center;
+  background-repeat:no-repeat
+}
+
+/* LATEST EPISODE HIGHLIGHT */
 
 .card.latest-card{
-  border:1px solid #9d7139;
-  background-color:#102131
+  border:1px solid var(--gold);
+  box-shadow:0 0 22px rgba(212,154,61,.12)
 }
 
 .card-content{
@@ -206,6 +251,11 @@ h3{
   padding-bottom:3px
 }
 
+.more:hover{
+  color:#fff;
+  border-bottom-color:#fff
+}
+
 .archive-link{
   text-align:center;
   padding:0 20px 80px
@@ -220,6 +270,11 @@ h3{
   text-decoration:none;
   font-weight:bold;
   background:#07111d55
+}
+
+.archive-btn:hover{
+  background:var(--gold);
+  color:var(--navy)
 }
 
 footer{
@@ -252,10 +307,21 @@ footer{
 }
 
 @media(max-width:760px){
-  .episodes{grid-template-columns:1fr}
-  .hero{min-height:92vh}
-  .kicker{letter-spacing:.2em}
-  .card{min-height:420px}
+  .episodes{
+    grid-template-columns:1fr
+  }
+
+  .hero{
+    min-height:92vh
+  }
+
+  .kicker{
+    letter-spacing:.2em
+  }
+
+  .card{
+    min-height:420px
+  }
 }
 </style>
 </head>
@@ -322,62 +388,95 @@ footer{
 
 <section class="episodes">
 
-  <!-- EPISODE 5 -->
+  <!-- EPISODE 8 — GLASGOW -->
 
-  <article class="card scott latest-card">
+  <article class="card glasgow latest-card">
 
     <div class="card-content">
 
       <div class="label">
-        ÉPISODE 5
+        ÉPISODE 8 · NOUVEAUTÉ
       </div>
 
       <h3>
-        Dans les pas de<br>
-        Walter Scott
+        Glasgow, l’autre<br>
+        visage de l’Écosse
       </h3>
 
       <p>
-        Des Scottish Borders aux Trossachs, partez sur les traces
-        de l’écrivain qui a profondément marqué notre façon d’imaginer l’Écosse.
+        Des jardins botaniques aux splendeurs victoriennes,
+        des rives de la Clyde aux hauteurs de la Nécropole,
+        découvrez les mille visages de la plus grande ville d’Écosse.
       </p>
 
       <a class="more"
-         href="https://open.spotify.com/episode/3vtN2JjcgCYMFN5iIIT39n?si=db64e086485147a1"
+         href="https://open.spotify.com/episode/2bmizClrHsN29VkGPkTbsk?si=7a40a6bde0c24c53"
          target="_blank"
          rel="noopener">
-        Découvrir l’épisode →
+        Écouter sur Spotify →
       </a>
 
     </div>
 
   </article>
 
-  <!-- EPISODE 4 -->
+  <!-- EPISODE 7 — GLENCOE -->
 
-  <article class="card moray">
+  <article class="card glencoe">
 
     <div class="card-content">
 
       <div class="label">
-        ÉPISODE 4
+        ÉPISODE 7
       </div>
 
       <h3>
-        La côte du<br>
-        Moray Firth
+        Glencoe
       </h3>
 
       <p>
-        De Fort George à Pennan, longez le Moray Firth entre châteaux,
-        villages de pêcheurs, falaises et paysages marins.
+        Au cœur de l’une des vallées les plus spectaculaires
+        des Highlands, voyagez entre montagnes majestueuses,
+        paysages sauvages et souvenirs d’une histoire tragique.
       </p>
 
       <a class="more"
-         href="https://open.spotify.com/episode/6lNkHxO2QRCu1ICCnuqq1D?si=ef9cc1a9edf542d7"
+         href="https://open.spotify.com/episode/19Uet2nmAb6fpa8hd77Mzc?si=86bb385863ab4299"
          target="_blank"
          rel="noopener">
-        Découvrir l’épisode →
+        Écouter sur Spotify →
+      </a>
+
+    </div>
+
+  </article>
+
+  <!-- EPISODE 6 — MULL, IONA ET STAFFA -->
+
+  <article class="card mull">
+
+    <div class="card-content">
+
+      <div class="label">
+        ÉPISODE 6
+      </div>
+
+      <h3>
+        Mull, Iona et Staffa<br>
+        L’âme sauvage
+      </h3>
+
+      <p>
+        Embarquez pour les Hébrides intérieures, entre
+        villages colorés, plages immaculées, anciennes abbayes
+        et colonnes de basalte de la mystérieuse grotte de Fingal.
+      </p>
+
+      <a class="more"
+         href="https://open.spotify.com/episode/2F7wUaY1GP9XWw9BxvrB8s?si=fe7cff99cbb6478f"
+         target="_blank"
+         rel="noopener">
+        Écouter sur Spotify →
       </a>
 
     </div>
